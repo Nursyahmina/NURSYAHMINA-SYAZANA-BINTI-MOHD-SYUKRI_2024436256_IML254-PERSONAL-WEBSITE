@@ -1,0 +1,275 @@
+body{
+    margin:0;
+    font-family:"Times New Roman";
+    background-color:#FFC0CB;
+
+    background-image:url("image/pattern1.jpeg");
+    background-size:300px;
+}
+
+/* NAVIGATION */
+
+nav{
+    background-color:#DB7093;
+    padding:18px;
+    text-align:center;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin:25px;
+    font-size:17px;
+    font-weight:bold;
+    display:inline-block;
+    transition:0.3s;
+}
+
+nav a:hover{
+    transform:translateY(-5px);
+    color:#ffe4ec;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    margin:35px auto;
+}
+
+/* HEADER */
+
+.header{
+    text-align:center;
+
+    background-color:#ffe4ec;
+
+    width:25%;
+
+    padding:10px;
+
+    margin:auto;
+    margin-bottom:35px;
+
+    border-radius:15px;
+
+    box-shadow:0px 4px 10px #d8a7b1;
+}
+
+.header h1{
+    color:#5c4033;
+    font-size:25px;
+
+    margin:0;
+}
+
+/* MAIN LAYOUT */
+
+.hobby-layout{
+    display:flex;
+
+    gap:20px;
+}
+
+/* LEFT SIDE */
+
+.left-side{
+    width:22%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    justify-content:center;
+}
+
+/* SIDEBAR */
+
+.sidebar{
+    width:100%;
+
+    background-color:#ffe4ec;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    height:fit-content;
+
+    box-shadow:0px 4px 10px #d8a7b1;
+}
+
+.sidebar h2{
+    color:#5c4033;
+
+    text-align:center;
+
+    margin-bottom:20px;
+}
+
+/* HOBBY ITEMS */
+
+.hobby-item{
+    background-color:#fff0f5;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    margin-bottom:15px;
+
+    text-align:center;
+
+    color:#7b5e57;
+
+    font-size:18px;
+
+    transition:0.3s;
+}
+
+.hobby-item:hover{
+    transform:scale(1.03);
+
+    background-color:#ffd6e7;
+}
+
+/* TITLE BOX */
+
+.gallery-title-box{
+    background-color:#ffe4ec;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    box-shadow:0px 4px 10px #d8a7b1;
+
+    margin-top:120px;
+}
+
+.gallery-title-box h2{
+    color:#5c4033;
+
+    font-size:28px;
+
+    line-height:1.5;
+
+    margin:0;
+}
+
+/* CONTENT */
+
+.content{
+    width:78%;
+}
+
+/* VIDEO + TEXT BOX */
+
+.main-box{
+    background-color:#ffe4ec;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    box-shadow:0px 4px 10px #d8a7b1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:30px;
+}
+
+/* PORTRAIT VIDEO */
+
+.main-box video{
+    width:320px;
+
+    height:570px;
+
+    object-fit:contain;
+
+    border-radius:20px;
+
+    background-color:black;
+
+    box-shadow:0px 4px 10px gray;
+}
+
+/* TEXT */
+
+.main-text{
+    width:40%;
+
+    background-color:#fff0f5;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    text-align:left;
+}
+
+.main-text h2{
+    color:#5c4033;
+
+    font-size:28px;
+}
+
+.main-text p{
+    color:#7b5e57;
+
+    line-height:1.8;
+
+    font-size:18px;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:15px;
+
+    margin-top:25px;
+}
+
+.gallery img{
+    width:100%;
+    height:180px;
+
+    object-fit:cover;
+
+    border-radius:18px;
+
+    box-shadow:0px 4px 10px gray;
+
+    transition:0.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* QUOTE */
+
+.quote{
+    margin-top:30px;
+
+    text-align:center;
+
+    color:#b76e79;
+
+    font-size:18px;
+
+    font-style:italic;
+}

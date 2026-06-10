@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Wish List Page</title>
+
+<link rel="stylesheet" href="wishlist.css">
+
+</head>
+
+<body>
+
+<!-- BACKGROUND MUSIC -->
+
+<audio id="bgmusic" autoplay loop>
+    <source src="music/wishlistsong.mp3" type="audio/mpeg">
+</audio>
+
+<nav>
+
+<a href="index.html">Home</a>
+<a href="myself.html">Myself</a>
+<a href="education.html">Education</a>
+<a href="family.html">Family</a>
+<a href="hobby.html">Hobby</a>
+<a href="experience.html">Experience</a>
+<a href="universitylife.html">University Life</a>
+<a href="wishlist.html">Wish List</a>
+
+</nav>
+
+<div class="container">
+
+<div class="header">
+
+<h1>My Wish List ✨</h1>
+
+</div>
+
+<div class="wishlist-grid">
+
+<!-- TRAVEL -->
+
+<div class="wish-card">
+
+<h2>✈️ Travel Dream</h2>
+
+<div class="slider">
+
+<img class="travelSlide" src="image/travel1.jpg">
+<img class="travelSlide" src="image/travel2.jpg">
+<img class="travelSlide" src="image/travel3.jpg">
+
+<button class="prev" onclick="plusTravel(-1)">❮</button>
+<button class="next" onclick="plusTravel(1)">❯</button>
+
+</div>
+
+<p>
+I dream of travelling around the world and exploring beautiful places.
+</p>
+
+<p><b>Target:</b> Before 2035 ✨</p>
+
+</div>
+
+<!-- GRADUATION -->
+
+<div class="wish-card">
+
+<h2>🎓 Graduation Dream</h2>
+
+<div class="slider">
+
+<img class="gradSlide" src="image/graduate1.jpg">
+<img class="gradSlide" src="image/graduate2.jpg">
+<img class="gradSlide" src="image/graduate3.jpg">
+
+<button class="prev" onclick="plusGrad(-1)">❮</button>
+<button class="next" onclick="plusGrad(1)">❯</button>
+
+</div>
+
+<p>
+I hope to graduate with success and make my parents proud.
+</p>
+
+<p><b>Target:</b> Graduate diploma with excellent results in 2027 🎓</p>
+
+</div>
+
+<!-- CAR -->
+
+<div class="wish-card">
+
+<h2>🚗 Dream Car</h2>
+
+<div class="slider">
+
+<img class="carSlide" src="image/car1.jpg">
+<img class="carSlide" src="image/car2.jpg">
+<img class="carSlide" src="image/car3.jpg">
+
+<button class="prev" onclick="plusCar(-1)">❮</button>
+<button class="next" onclick="plusCar(1)">❯</button>
+
+</div>
+
+<p>
+One of my dreams is to own my favourite dream car.
+</p>
+
+<p><b>Target:</b> Own my dream car before the age of 30 🚗</p>
+
+<a href="https://www.toyota.com" target="_blank" class="car-link">
+View My Dream Car 🚗
+</a>
+
+</div>
+
+<!-- LIFE -->
+
+<div class="wish-card">
+
+<h2>💖 Happy & Successful Life</h2>
+
+<div class="slider">
+
+<img class="lifeSlide" src="image/life1.jpg">
+<img class="lifeSlide" src="image/life2.jpeg">
+<img class="lifeSlide" src="image/life3.jpg">
+
+<button class="prev" onclick="plusLife(-1)">❮</button>
+<button class="next" onclick="plusLife(1)">❯</button>
+
+</div>
+
+<p>
+I wish for a happy life, a successful career and quality time with my family.
+</p>
+
+<p><b>Target:</b> Build a stable career and support my family ❤</p>
+
+</div>
+
+</div>
+
+<div class="quote">
+
+<p>
+"Dream big, work hard, and make it happen." ✨
+
+</p>
+
+</div>
+
+</div>
+
+<script>
+
+function createSlider(className){
+
+let index=0;
+let slides=document.getElementsByClassName(className);
+
+function showSlide(){
+
+for(let i=0;i<slides.length;i++){
+slides[i].style.display="none";
+}
+
+index++;
+
+if(index>slides.length){
+index=1;
+}
+
+slides[index-1].style.display="block";
+
+}
+
+showSlide();
+
+setInterval(showSlide,3000);
+
+return function(n){
+
+index=index+n-1;
+
+if(index<0){
+index=slides.length-1;
+}
+
+showSlide();
+
+};
+
+}
+
+let plusTravel=createSlider("travelSlide");
+let plusGrad=createSlider("gradSlide");
+let plusCar=createSlider("carSlide");
+let plusLife=createSlider("lifeSlide");
+
+</script>
+
+<script>
+
+window.addEventListener("load", function(){
+
+let music = document.getElementById("bgmusic");
+
+music.volume = 0.3;
+
+let playPromise = music.play();
+
+if(playPromise !== undefined){
+
+playPromise.catch(() => {
+
+document.addEventListener("click", function(){
+
+music.play();
+
+}, {once:true});
+
+});
+
+}
+
+});
+
+</script>
+
+</body>
+
+</html>

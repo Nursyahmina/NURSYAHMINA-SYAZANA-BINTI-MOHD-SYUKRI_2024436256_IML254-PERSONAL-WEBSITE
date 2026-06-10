@@ -1,0 +1,195 @@
+body{
+    margin:0;
+    font-family:"Times New Roman";
+    background-color:#FFC0CB;
+
+    background-image:url("image/pattern1.jpeg");
+    background-size:300px;
+}
+
+/* NAVIGATION */
+
+nav{
+    background-color:#DB7093;
+    padding:18px;
+    text-align:center;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin:25px;
+    font-size:17px;
+    font-weight:bold;
+    display:inline-block;
+    transition:0.3s;
+}
+
+nav a:hover{
+    transform:translateY(-5px);
+    color:#ffe4ec;
+}
+
+/* CONTAINER */
+
+.container{
+    width:90%;
+    margin:35px auto;
+}
+
+/* HEADER */
+
+.header{
+    text-align:center;
+
+    background-color:#ffe4ec;
+
+    width:28%;
+
+    padding:10px;
+
+    margin:auto;
+    margin-bottom:35px;
+
+    border-radius:15px;
+
+    box-shadow:0px 4px 10px #d8a7b1;
+}
+
+.header h1{
+    color:#5c4033;
+    font-size:25px;
+
+    margin:0;
+}
+
+/* SEMESTER GRID */
+
+.semester-grid{
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:20px;
+}
+
+/* SEMESTER CARD */
+
+.sem-card{
+    background-color:#ffe4ec;
+
+    padding:18px;
+
+    border-radius:25px;
+
+    box-shadow:0px 4px 10px #d8a7b1;
+
+    transition:0.3s;
+}
+
+.sem-card:hover{
+    transform:translateY(-5px);
+}
+
+/* SEMESTER TITLE */
+
+.sem-card h2{
+    color:#5c4033;
+
+    font-size:28px;
+
+    margin-bottom:15px;
+
+    text-align:center;
+}
+
+/* IMAGE GRID */
+
+.sem-images{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:10px;
+
+    margin-bottom:15px;
+}
+
+.sem-images img{
+    width:100%;
+    height:150px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    box-shadow:0px 4px 10px gray;
+
+    transition:0.3s;
+}
+
+.sem-images img:hover{
+    transform:scale(1.05);
+}
+
+/* TEXT */
+
+.sem-card p{
+    color:#7b5e57;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    text-align:center;
+}
+
+/* VIDEO SECTION */
+
+.video-section{
+    background-color:#ffe4ec;
+
+    padding:20px;
+
+    border-radius:25px;
+
+    box-shadow:0px 4px 10px #d8a7b1;
+
+    margin-top:40px;
+
+    text-align:center;
+}
+
+.video-section h2{
+    color:#5c4033;
+
+    font-size:28px;
+
+    margin-bottom:20px;
+}
+
+.video-section video{
+    width:75%;
+
+    height:420px;
+
+    object-fit:cover;
+
+    border-radius:20px;
+
+    box-shadow:0px 4px 10px gray;
+}
+
+/* QUOTE */
+
+.quote{
+    margin-top:30px;
+
+    text-align:center;
+
+    color:#b76e79;
+
+    font-size:18px;
+
+    font-style:italic;
+}

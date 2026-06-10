@@ -1,0 +1,335 @@
+body{
+    margin:0;
+    font-family:"Times New Roman";
+    background-color:#FFC0CB;
+
+    background-image:url("image/pattern1.jpeg");
+    background-size:300px;
+}
+
+/* NAVIGATION */
+
+nav{
+    background-color:#DB7093;
+    padding:18px;
+    text-align:center;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin:25px;
+    font-size:17px;
+    font-weight:bold;
+    display:inline-block;
+    transition:0.3s;
+    letter-spacing:1px;
+}
+
+nav a:hover{
+    transform:translateY(-5px);
+    color:#ffe4ec;
+}
+
+/* MAIN CONTAINER */
+
+.container{
+    width:85%;
+    margin:50px auto;
+}
+
+/* ABOUT SECTION */
+
+.about{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:50px;
+
+    background-color:#ffe4ec;
+    padding:40px;
+    border-radius:25px;
+
+    box-shadow:0px 4px 10px #d8a7b1;
+}
+
+/* IMAGE GALLERY */
+
+.image-gallery{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.photo-box{
+    text-align:center;
+}
+
+.gallery-pic{
+    width:220px;
+    height:320px;
+    object-fit:cover;
+
+    border-radius:25px;
+    border:5px solid white;
+
+    box-shadow:0px 4px 10px gray;
+
+    transition:0.3s;
+}
+
+.gallery-pic:hover{
+    transform:scale(1.05);
+}
+
+.photo-box p{
+    margin-top:10px;
+    color:#7b5e57;
+    font-size:18px;
+}
+
+/* ABOUT TEXT */
+
+.about-text{
+    width:55%;
+}
+
+.about-text h1{
+    font-size:50px;
+    color:#5c4033;
+
+    margin-bottom:15px;
+}
+
+.about-text p{
+    font-size:20px;
+    color:#7b5e57;
+
+    line-height:1.8;
+}
+
+/* BOTTOM SECTION */
+
+.bottom-section{
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+
+    margin-top:50px;
+}
+
+/* PERSONAL INFORMATION */
+
+.info-table{
+    width:60%;
+
+    background-color:#ffe4ec;
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:0px 4px 10px #d8a7b1;
+}
+
+.info-table h2{
+    text-align:center;
+    color:#5c4033;
+
+    font-size:35px;
+
+    margin-bottom:25px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+td{
+    border:2px solid #DB7093;
+
+    padding:15px;
+
+    font-size:20px;
+    color:#7b5e57;
+}
+
+td:first-child{
+    background-color:#ffd6e7;
+    font-weight:bold;
+
+    width:30%;
+}
+
+/* FUN FACTS */
+
+.facts{
+    width:40%;
+}
+
+.fact-row{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    margin-bottom:25px;
+}
+
+.fact-box{
+    background-color:#ffe4ec;
+    padding:20px;
+    border-radius:20px;
+    width:250px;
+    text-align:center;
+    box-shadow:0px 4px 10px #d8a7b1;
+    transition:0.4s;
+}
+
+.fact-box:hover{
+    transform:translateY(-10px) scale(1.03);
+}
+
+.fact-box h3{
+    color:#5c4033;
+    font-size:25px;
+
+    margin-bottom:10px;
+}
+
+.fact-box p{
+    color:#7b5e57;
+    font-size:18px;
+
+    line-height:1.5;
+}
+
+.fact-box a{
+    display:inline-block;
+    margin-top:10px;
+    text-decoration:none;
+    color:white;
+    background-color:#DB7093;
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:14px;
+}
+
+.fact-box a:hover{
+    background-color:#5c4033;
+}
+
+.side-img{
+    width:140px;
+    height:140px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0px 4px 10px gray;
+    flex-shrink:0;
+}
+
+/* VIDEO BUTTON */
+
+.video-btn{
+
+background-color:#DB7093;
+color:white;
+
+padding:12px 25px;
+
+border:none;
+
+border-radius:30px;
+
+font-size:17px;
+
+cursor:pointer;
+
+margin-top:20px;
+
+box-shadow:0px 4px 10px gray;
+
+transition:0.3s;
+
+}
+
+.video-btn:hover{
+
+background-color:#5c4033;
+
+transform:scale(1.05);
+
+}
+
+/* VIDEO POPUP */
+
+.modal{
+
+display:none;
+
+position:fixed;
+
+z-index:999;
+
+left:0;
+top:0;
+
+width:100%;
+height:100%;
+
+background-color:rgba(0,0,0,0.8);
+
+}
+
+.modal-content{
+
+width:60%;
+
+margin:5% auto;
+
+background:white;
+
+padding:20px;
+
+border-radius:20px;
+
+position:relative;
+
+}
+
+.modal-content video{
+
+width:100%;
+
+border-radius:15px;
+
+}
+
+.close{
+
+position:absolute;
+
+top:10px;
+right:20px;
+
+font-size:35px;
+
+cursor:pointer;
+
+color:#DB7093;
+
+}
+.fact-box a{
+    display:inline-block;
+    margin-top:10px;
+    text-decoration:none;
+    background-color:#DB7093;
+    color:white;
+    padding:8px 15px;
+    border-radius:20px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+.fact-box a:hover{
+    background-color:#5c4033;
+    transform:scale(1.05);
+}

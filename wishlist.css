@@ -1,0 +1,163 @@
+body{
+    margin:0;
+    font-family:"Times New Roman";
+    background-color:#FFC0CB;
+    background-image:url("image/pattern1.jpeg");
+    background-size:300px;
+}
+
+/* NAVIGATION */
+
+nav{
+    background-color:#DB7093;
+    padding:18px;
+    text-align:center;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin:25px;
+    font-size:17px;
+    font-weight:bold;
+    display:inline-block;
+    transition:0.3s;
+}
+
+nav a:hover{
+    transform:translateY(-5px);
+    color:#ffe4ec;
+}
+
+/* CONTAINER */
+
+.container{
+    width:80%;
+    margin:30px auto;
+}
+
+/* HEADER */
+
+.header{
+    text-align:center;
+
+    background-color:#ffe4ec;
+
+    width:30%;
+
+    padding:10px;
+
+    margin:auto;
+    margin-bottom:35px;
+
+    border-radius:15px;
+
+    box-shadow:0px 4px 10px #d8a7b1;
+}
+
+.header h1{
+    color:#5c4033;
+    font-size:24px;
+
+    margin:0;
+}
+
+/* GRID */
+
+.wishlist-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:25px;
+    margin-top:40px;
+}
+
+/* CARD */
+
+.wish-card{
+    background-color:#ffe4ec;
+    padding:18px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0px 4px 10px #d8a7b1;
+    transition:0.3s;
+}
+
+.wish-card:hover{
+    transform:translateY(-8px);
+}
+
+/* SLIDER */
+
+.slider{
+    position:relative;
+    width:100%;
+}
+
+.travelSlide,
+.gradSlide,
+.carSlide,
+.lifeSlide{
+
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:15px;
+    display:none;
+    transition:0.3s;
+}
+
+.travelSlide:hover,
+.gradSlide:hover,
+.carSlide:hover,
+.lifeSlide:hover{
+    transform:scale(1.03);
+}
+
+.prev,
+.next{
+
+    position:absolute;
+    top:45%;
+    background-color:rgba(0,0,0,0.5);
+    color:white;
+    border:none;
+    padding:8px 12px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.prev{
+    left:5px;
+}
+
+.next{
+    right:5px;
+}
+
+.wish-card p{
+    color:#7b5e57;
+    line-height:1.7;
+}
+
+.car-link{
+    display:inline-block;
+    margin-top:10px;
+    padding:8px 15px;
+    background-color:#DB7093;
+    color:white;
+    text-decoration:none;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.car-link:hover{
+    background-color:#5c4033;
+}
+
+.quote{
+    text-align:center;
+    margin-top:30px;
+    color:#b76e79;
+    font-style:italic;
+    font-size:20px;
+}

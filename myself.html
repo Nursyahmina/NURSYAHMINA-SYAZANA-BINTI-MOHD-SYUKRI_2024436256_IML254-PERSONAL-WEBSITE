@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Myself Page</title>
+
+<link rel="stylesheet" href="myself.css">
+
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="myself.html">Myself</a>
+
+<a href="education.html">Education</a>
+
+<a href="family.html">Family</a>
+
+<a href="hobby.html">Hobby</a>
+
+<a href="experience.html">Experience</a>
+
+<a href="universitylife.html">University Life</a>
+
+<a href="wishlist.html">Wish List</a>
+
+</nav>
+
+<div class="container">
+
+<!-- ABOUT ME -->
+
+<div class="about">
+
+<div class="image-gallery">
+
+<div class="photo-box">
+
+<img src="image/myself-babyme.jpeg" class="gallery-pic" />
+
+<p>Baby Me 👶</p>
+
+</div>
+
+<div class="photo-box">
+
+<img src="image/myself-me.jpeg" class="gallery-pic" />
+
+<p>Me Now ♡</p>
+
+</div>
+
+</div>
+
+<div class="about-text">
+
+<h1>ABOUT ME ♡</h1>
+
+<p>
+Hye! My name is Nursyahmina Syazana.
+I am currently studying Diploma in Library Informatics
+at UiTM Kedah.
+
+I enjoy listening to music, dancing,
+food hunting and creating beautiful memories
+with my family and friends ✨
+</p>
+
+<button class="video-btn" onclick="openVideo()">
+
+🎥 Watch My Video
+
+</button>
+
+</div>
+
+</div>
+
+<!-- BOTTOM SECTION -->
+
+<div class="bottom-section">
+
+<!-- PERSONAL INFORMATION -->
+
+<div class="info-table">
+
+<h2>Personal Information ✿</h2>
+
+<table>
+
+<tr>
+<td>Full Name</td>
+<td>Nursyahmina Syazana Binti Mohd Syukri</td>
+</tr>
+
+<tr>
+<td>Age</td>
+<td>20 Years Old</td>
+</tr>
+
+<tr>
+<td>Date of Birth</td>
+<td>20 November 2006</td>
+</tr>
+
+<tr>
+<td>State</td>
+<td>Pulau Pinang</td>
+</tr>
+
+<tr>
+<td>Course</td>
+<td>Diploma in Library Informatics</td>
+</tr>
+
+<tr>
+<td>Favourite Colour</td>
+<td>Pink ♡</td>
+</tr>
+
+<tr>
+<td>Favourite Food</td>
+<td>Chicken Chop & Korean Food</td>
+</tr>
+
+</table>
+
+</div>
+
+<!-- FUN FACTS -->
+
+<div class="facts">
+
+<!-- Favourite Song -->
+
+<div class="fact-row">
+
+    <div class="fact-box">
+
+        <h3>🎵 Favourite Song</h3>
+
+        <p>
+        Orange by Treasure ♡
+        </p>
+
+        <a href="https://youtu.be/sA3taBUfp-Q?si=Tg_I6Zj0dmUjZ9d9"
+        target="_blank">
+        🎧 Listen on YouTube
+        </a>
+
+    </div>
+
+    <img src="image/myself-song.jpeg"
+    class="side-img" />
+
+</div>
+
+<!-- Cafe Hunting -->
+<div class="fact-row">
+
+<div class="fact-box">
+
+<h3>☕ Cafe Hunting</h3>
+
+<p>
+I enjoy discovering aesthetic cafes
+and good food.
+</p>
+
+</div>
+
+<img src="image/myself-cafe.jpeg" class="side-img" />
+
+</div>
+
+<!-- Memories -->
+<div class="fact-row">
+
+<div class="fact-box">
+
+<h3>📸 Memories</h3>
+
+<p>
+Taking pictures and making memories
+make me happy.
+</p>
+
+</div>
+
+<img src="image/myself-memory.jpeg" class="side-img" />
+
+</div>
+
+</div>
+
+<!-- VIDEO POPUP -->
+
+<div id="videoModal" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeVideo()">
+
+&times;
+
+</span>
+
+<video controls>
+
+<source src="video/myself-video.mp4" type="video/mp4">
+
+</video>
+
+</div>
+
+</div>
+
+<script>
+
+function openVideo(){
+
+document.getElementById("videoModal").style.display="block";
+
+}
+
+function closeVideo(){
+
+document.getElementById("videoModal").style.display="none";
+
+}
+
+window.onclick=function(event){
+
+let modal=document.getElementById("videoModal");
+
+if(event.target==modal){
+
+modal.style.display="none";
+
+}
+
+}
+
+</script>
+
+</body>
+
+</html>

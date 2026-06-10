@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Home Page</title>
+
+<link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+<!-- BACKGROUND MUSIC -->
+
+<audio id="bgmusic" autoplay loop>
+    <source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<a href="myself.html">
+(◕‿◕)<br />
+Myself
+</a>
+
+<a href="education.html">
+🕮<br />
+Education
+</a>
+
+<a href="family.html">
+𐦂𖨆𐀪𖠋𐀪𐀪<br />
+My Family
+</a>
+
+<a href="hobby.html">
+[◉°]<br />
+Hobby
+</a>
+
+<a href="experience.html">
+🖳<br />
+Experience
+</a>
+
+<a href="universitylife.html">
+𖠿<br />
+University Life
+</a>
+
+<a href="wishlist.html">
+☃<br />
+Wish List
+</a>
+
+</nav>
+
+<!-- HOME SECTION -->
+
+<div class="home">
+
+<!-- TEXT -->
+
+<div class="text">
+
+<h1>WELCOME TO MY LITTLE WORLD ♡</h1>
+
+<p>
+Hello! I'm Nursyahmina Syazana ♡<br />
+Welcome to my personal website filled with
+my memories, interests and university journey.
+</p>
+
+<p class="quote">
+"Enjoy every moment and create beautiful memories."
+</p>
+
+<a href="myself.html" class="button">
+WANT TO KNOW ME BETTER?
+</a>
+
+<a href="#contact" class="button">
+CONTACT ME
+</a>
+
+</div>
+
+<!-- SLIDESHOW -->
+
+<div class="slideshow-container">
+
+<img class="slides" src="image/photo.jpeg" />
+
+<img class="slides" src="image/photo2.jpeg" />
+
+<img class="slides" src="image/photo3.jpeg" />
+
+<button class="prev" onclick="plusSlides(-1)">❮</button>
+
+<button class="next" onclick="plusSlides(1)">❯</button>
+
+</div>
+
+</div>
+
+<!-- CARD SECTION -->
+
+<div class="card-container">
+
+<a href="myself.html" class="card-link">
+
+<div class="card">
+
+<img src="image/photo4.jpeg" />
+
+<h3>Myself</h3>
+
+<p>Just a girl creating memories and enjoying life ♡</p>
+
+</div>
+</a>
+
+<a href="education.html" class="card-link">
+
+<div class="card">
+
+<img src="image/photo5.jpeg" />
+
+<h3>Education</h3>
+
+<p>
+My journey as a student ♡
+</p>
+
+</div>
+</a>
+
+<a href="family.html" class="card-link">
+
+<div class="card">
+
+<img src="image/photo6.jpeg" />
+
+<h3>My Family</h3>
+
+<p>My biggest support system ✿</p>
+
+</div>
+</a>
+
+<a href="hobby.html" class="card-link">
+
+<div class="card">
+
+<img src="image/photo7.jpeg" />
+
+<h3>My Hobby</h3>
+
+<p>I enjoy food hunting and discovering aesthetic cafes ✿</p>
+
+</div>
+</a>
+
+<a href="experience.html" class="card-link">
+
+<div class="card">
+
+<img src="image/photo8.jpeg" />
+
+<h3>Experience</h3>
+
+<p>Part time work before entering uni life</p>
+
+</div>
+</a>
+
+<a href="universitylife.html" class="card-link">
+
+<div class="card">
+
+<img src="image/photo9.jpeg" />
+
+<h3>University Life</h3>
+
+<p>Creating memories at UiTM</p>
+
+</div>
+</a>
+
+<a href="wishlist.html" class="card-link">
+
+<div class="card">
+
+<img src="image/photo10.jpeg" />
+
+<h3>My Dream</h3>
+
+<p>Travel the world happily ♡</p>
+
+</div>
+</a>
+
+</div>
+
+<!-- CONTACT SECTION -->
+
+<div class="contact" id="contact">
+
+<h2><u>Contact Me ♡</u></h2>
+
+<div class="contact-info">
+
+<a href="https://wa.me/60123456789">
+📱 012-3456789
+</a>
+
+<a href="mailto:annasya@gmail.com">
+✉️ annasya@gmail.com
+</a>
+
+<a href="https://instagram.com/annasya">
+📷 @annasya
+</a>
+
+</div>
+
+</div>
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides(){
+
+let i;
+
+let slides = document.getElementsByClassName("slides");
+
+for(i = 0; i < slides.length; i++){
+    slides[i].style.display = "none";
+}
+
+slideIndex++;
+
+if(slideIndex > slides.length){
+    slideIndex = 1;
+}
+
+slides[slideIndex-1].style.display = "block";
+
+setTimeout(showSlides, 7000);
+
+}
+
+function plusSlides(n){
+
+slideIndex += n - 1;
+
+showSlides();
+
+}
+
+</script>
+
+<script>
+
+window.addEventListener("load", function(){
+
+let music = document.getElementById("bgmusic");
+
+music.volume = 0.3;
+
+let playPromise = music.play();
+
+if(playPromise !== undefined){
+
+playPromise.catch(() => {
+
+document.addEventListener("click", function(){
+
+music.play();
+
+}, {once:true});
+
+});
+
+}
+
+});
+
+</script>
+
+</body>
+
+</html>
