@@ -193,3 +193,29 @@ nav a:hover{
 
     font-style:italic;
 }
+
+.slideshow-section{
+    margin-top:50px;
+    text-align:center;
+}
+
+.slideshow-section h2{
+    color:#5c4033;
+    margin-bottom:20px;
+}
+
+.slideshow{
+    width:600px;
+    height:350px;
+    margin:auto;
+    overflow:hidden;
+    border-radius:20px;
+    box-shadow:0px 4px 10px gray;
+}
+
+.slide{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    display:none;
+}
