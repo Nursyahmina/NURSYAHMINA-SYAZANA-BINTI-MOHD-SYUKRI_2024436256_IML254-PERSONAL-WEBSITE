@@ -147,6 +147,23 @@ with many beautiful moments and experiences ✨
 
 </div>
 
+<!-- PHOTO SLIDESHOW -->
+
+<div class="slideshow-section">
+
+<h2>More University Memories 📸</h2>
+
+<div class="slideshow">
+
+<img class="slide" src="image/unisem1-1.jpeg">
+<img class="slide" src="image/unisem2-1.jpeg">
+<img class="slide" src="image/unisem3-1.jpeg">
+<img class="slide" src="image/unisem4-1.jpeg">
+
+</div>
+
+</div>
+
 <!-- QUOTE -->
 
 <div class="quote">
@@ -158,6 +175,32 @@ with many beautiful moments and experiences ✨
 </div>
 
 </div>
+
+<script>
+
+let slideIndex = 0;
+let slides = document.getElementsByClassName("slide");
+
+function showSlides(){
+
+    for(let i=0; i<slides.length; i++){
+        slides[i].style.display = "none";
+    }
+
+    slideIndex++;
+
+    if(slideIndex > slides.length){
+        slideIndex = 1;
+    }
+
+    slides[slideIndex-1].style.display = "block";
+
+    setTimeout(showSlides, 3000);
+}
+
+showSlides();
+
+</script>
 
 </body>
 
